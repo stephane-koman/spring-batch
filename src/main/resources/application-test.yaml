@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: default
+
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: root
+    password: Password
+    jdbc-url: jdbc:postgresql://localhost:5433/testbdb1
+  seconddatasource:
+    driver-class-name: org.postgresql.Driver
+    jdbc-url: jdbc:postgresql://localhost:5433/testbdb2
+    username: root
+    password: Password
